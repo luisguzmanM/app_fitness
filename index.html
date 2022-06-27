@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>App fitness</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="selectors">
+      <form class="form" id="form">
+
+        <div class="container-selection">
+          <h4>¿Entrenas con equipamiento?</h4>
+          <label for="con-equipo">Con equipo</label>
+          <input type="radio" name="equipamiento" id="con-equipo">
+          <label for="sin-equipo">Sin equipo</label>
+          <input type="radio" name="equipamiento" id="sin-equipo" checked>
+        </div>
+
+        <div class="container-selection">
+          <h4>¿Con qué nivel te identificas?</h4>
+          <label for="principiante">Principiante</label>
+          <input type="radio" name="nivel" id="principiante" checked>
+          <label for="intermedio">Intermedio</label>
+          <input type="radio" name="nivel" id="intermedio">
+          <label for="avanzado">Avanzado</label>
+          <input type="radio" name="nivel" id="avanzado">
+        </div>
+        
+        <div class="container-selection">
+          <h4><label for="muscle-group">¿Qué grupo muscular te gustaría entrenar hoy?</label></h4>
+          <select name="muscle-group" id="muscle-group">
+            <option value="legs">Piernas</option>
+            <option value="arms">Brazos</option>
+            <option value="chest">Pectoral</option>
+            <option value="back">Espalda</option>
+            <option value="shoulders">Hombros</option>
+            <option value="abs">Abdominales</option>
+          </select>
+        </div>
+
+        <button id="btn-search" class="button-standard">Ver rutina</button>
+
+      </form>
+    </aside>
+    <main>
+      <ul class="routine" id="container-routine"></ul>
+    </main>
+  </div>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
