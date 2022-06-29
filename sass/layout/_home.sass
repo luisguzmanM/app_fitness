@@ -1,21 +1,38 @@
 @use '../utilities/variables' as var
 
-* 
+*
   padding: 0
   margin: 0
   box-sizing: border-box
   font-family: monospace
 
-aside 
-  .form 
+aside
+  form
     text-align: center
-    h4
-      margin: var.$margin-vertical-big
-    button 
-      max-width: 200px
-      margin: 50px 0
-main 
-  ul 
+    .container-selection
+      .equipamiento
+        margin: 20px 0
+      select
+        margin-top: 20px
+      .level
+        display: flex
+        flex-direction: column
+        margin: 20px 0
+        label
+          display: flex
+          align-items: center
+          justify-content: space-between
+          width: 106px
+          margin: 0 auto
+    button
+      background: var.$color-botones
+      border: var.$borde-botones
+      padding: var.$padding-botones
+      box-shadow: var.$sombra-botones
+      border-radius: var.$curva-bordes-botones
+      margin: var.$mv-btn 0
+main
+  ul
     text-align: center
     list-style: none
     li
@@ -24,6 +41,6 @@ main
       width: 80%
       border-radius: 7px
       padding: 20px
-      img 
+      img
         max-width: 100%
         max-height: 180px

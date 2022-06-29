@@ -10,29 +10,32 @@
 <body>
   <div class="container">
     <aside class="selectors">
-      <form class="form" id="form">
+      <form id="form">
 
         <div class="container-selection">
           <h4>¿Entrenas con equipamiento?</h4>
-          <label for="con-equipo">Con equipo</label>
-          <input type="radio" name="equipamiento" id="con-equipo">
-          <label for="sin-equipo">Sin equipo</label>
-          <input type="radio" name="equipamiento" id="sin-equipo" checked>
+          <div class="equipamiento">
+            <label for="con-equipo">Con equipo</label>
+            <input type="radio" name="equipamiento" id="con-equipo">
+            <label for="sin-equipo">Sin equipo</label>
+            <input type="radio" name="equipamiento" id="sin-equipo" checked>
+          </div>
         </div>
 
         <div class="container-selection">
           <h4>¿Con qué nivel te identificas?</h4>
-          <label for="principiante">Principiante</label>
-          <input type="radio" name="nivel" id="principiante" checked>
-          <label for="intermedio">Intermedio</label>
-          <input type="radio" name="nivel" id="intermedio">
-          <label for="avanzado">Avanzado</label>
-          <input type="radio" name="nivel" id="avanzado">
+          <div class="level">
+            <label for="principiante">Principiante <input type="radio" name="nivel" id="principiante" checked></label>
+            <label for="intermedio">Intermedio <input type="radio" name="nivel" id="intermedio"></label>
+            <label for="avanzado">Avanzado <input type="radio" name="nivel" id="avanzado"></label>
+            
+          </div>
         </div>
         
         <div class="container-selection">
-          <h4><label for="muscle-group">¿Qué grupo muscular te gustaría entrenar hoy?</label></h4>
+          <h4><label for="muscle-group">Selecciona el grupo muscular</label></h4>
           <select name="muscle-group" id="muscle-group">
+            <option value="">Seleccionar</option>
             <option value="legs">Piernas</option>
             <option value="arms">Brazos</option>
             <option value="chest">Pectoral</option>
@@ -42,7 +45,7 @@
           </select>
         </div>
 
-        <button id="btn-search" class="button-standard">Ver rutina</button>
+        <button type="submit" id="btn-search" class="button-standard">Ver rutina</button>
 
       </form>
     </aside>
