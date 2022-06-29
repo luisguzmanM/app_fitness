@@ -183,8 +183,8 @@ export let routines = {
         ejercicio_1 : {
           nombre : "Salto",
           series : 4,
-          repeticiones : "15 cada pierna",
-          descanso : "1 minuto",
+          repeticiones : 15,
+          descanso : "30 segundos",
           gif : "./assets/pierna/salto.gif",
         },
         ejercicio_2 : {
@@ -204,7 +204,7 @@ export let routines = {
         ejercicio_4 : {
           nombre : "sentadilla simple",
           series : 4,
-          repeticiones : "15 cada pierna",
+          repeticiones : 15,
           descanso : "1 minuto",
           gif : "./assets/pierna/sentadillas-simple.gif",
         },
