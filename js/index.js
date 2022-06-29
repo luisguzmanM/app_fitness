@@ -74,11 +74,13 @@ function showRoutine(param){
   for(let item in param){
     const { nombre, series, equipo, repeticiones, descanso, gif } = param[item];
     const routineHTML = `
-      <h3>${nombre}</h3>
-      <p>Series: ${series}</p>
-      <p>Repeticiones: ${repeticiones}</p>
-      <p>Descanso: ${descanso}</p>
-      <img src="${gif}">
+      <li>
+        <h3>${nombre}</h3>
+        <p>Series: ${series}</p>
+        <p>Repeticiones: ${repeticiones}</p>
+        <p>Descanso: ${descanso}</p>
+        <img src="${gif}">
+      </li>
     `;
     arrayRoutine.push(routineHTML);
   }

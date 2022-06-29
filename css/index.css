@@ -18,8 +18,16 @@ aside .form button {
 
 main ul {
   text-align: center;
+  list-style: none;
 }
-main ul img {
+main ul li {
+  margin: 0 auto 20px auto;
+  box-shadow: 0px 4px 10px 0px #ddd;
+  width: 80%;
+  border-radius: 7px;
+  padding: 20px;
+}
+main ul li img {
   max-width: 100%;
   max-height: 180px;
 }
