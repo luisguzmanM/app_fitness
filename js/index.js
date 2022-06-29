@@ -79,7 +79,7 @@ function showRoutine(param){
         <p>Series: ${series}</p>
         <p>Repeticiones: ${repeticiones}</p>
         <p>Descanso: ${descanso}</p>
-        <img src="${gif}">
+        <img src="${gif}" alt="gif-exercise">
       </li>
     `;
     arrayRoutine.push(routineHTML);
