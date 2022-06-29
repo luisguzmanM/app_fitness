@@ -8,7 +8,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/sentadilla_mancuerna.gif",
+          gif : "./assets/pierna/sentadilla_mancuerna.gif",
         },
         ejercicio_2 : {
           nombre : "Sentadilla a una pierna",
@@ -16,7 +16,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : "15 cada pierna",
           descanso : "1 minuto",
-          gif : "../assets/pierna/sentadillas-a-una-pierna.gif",
+          gif : "./assets/pierna/sentadillas-a-una-pierna.gif",
         },
         ejercicio_3 : {
           nombre : "Sentadilla sumo",
@@ -24,7 +24,7 @@ export let routines = {
           equipo : "Mancuerna",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/sentadilla_sumo.gif",
+          gif : "./assets/pierna/sentadilla_sumo.gif",
         },
         ejercicio_4 : {
           nombre : "Peso muerto",
@@ -32,7 +32,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/peso_muerto.gif",
+          gif : "./assets/pierna/peso_muerto.gif",
         },
       },
       hombros : {
@@ -42,7 +42,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/hombro/press_militar.gif",
+          gif : "./assets/hombro/press_militar.gif",
         },
         ejercicio_2 : {
           nombre : "Elevación frontal explosiva",
@@ -50,7 +50,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : "15 cada brazo",
           descanso : "1 minuto",
-          gif : "../assets/hombro/hombro_compuesto.gif",
+          gif : "./assets/hombro/hombro_compuesto.gif",
         },
         ejercicio_3 : {
           nombre : "Elevación lateral simple",
@@ -58,7 +58,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/hombro/elevacion_lateral.gif",
+          gif : "./assets/hombro/elevacion_lateral.gif",
         },
         ejercicio_4 : {
           nombre : "Elevación lateral completa",
@@ -66,7 +66,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/hombro/elevacion_lateral_completa.gif",
+          gif : "./assets/hombro/elevacion_lateral_completa.gif",
         },
       },
       brazos : {
@@ -76,7 +76,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/brazos/curl_biceps_mancuerna.gif",
+          gif : "./assets/brazos/curl_biceps_mancuerna.gif",
         },
         ejercicio_2 : {
           nombre : "Curl martillo",
@@ -84,7 +84,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/brazos/curl_martillo.gif",
+          gif : "./assets/brazos/curl_martillo.gif",
         },
         ejercicio_3 : {
           nombre : "Press frances",
@@ -92,7 +92,7 @@ export let routines = {
           equipo : "Barra con discos",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/brazos/press_frances.gif",
+          gif : "./assets/brazos/press_frances.gif",
         },
         ejercicio_4 : {
           nombre : "Patada",
@@ -100,7 +100,7 @@ export let routines = {
           equipo : "Mancuerna",
           repeticiones : "15 cada brazo",
           descanso : "1 minuto",
-          gif : "../assets/brazos/patada.gif",
+          gif : "./assets/brazos/patada.gif",
         },
       },
     },
@@ -112,7 +112,7 @@ export let routines = {
           equipo : "Barra con discos",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/sentadilla_posterior_barra.gif",
+          gif : "./assets/pierna/sentadilla_posterior_barra.gif",
         },
         ejercicio_2 : {
           nombre : "Zancada con barra posterior",
@@ -120,7 +120,7 @@ export let routines = {
           equipo : "Barra con discos",
           repeticiones : "15 cada pierna",
           descanso : "1 minuto",
-          gif : "../assets/pierna/zancada_barra.gif",
+          gif : "./assets/pierna/zancada_barra.gif",
         },
         ejercicio_3 : {
           nombre : "Peso muerto",
@@ -128,7 +128,7 @@ export let routines = {
           equipo : "Barra con discos",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/peso_muerto_barra.gif",
+          gif : "./assets/pierna/peso_muerto_barra.gif",
         },
         ejercicio_4 : {
           nombre : "Sentadilla a una pierna",
@@ -136,7 +136,7 @@ export let routines = {
           equipo : "Mancuernas",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/sentadillas-a-una-pierna.gif",
+          gif : "./assets/pierna/sentadillas-a-una-pierna.gif",
         },
       },
     },
@@ -148,7 +148,7 @@ export let routines = {
           equipo : "Barra con discos",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/sentadilla_barra_sobre_cabeza.gif",
+          gif : "./assets/pierna/sentadilla_barra_sobre_cabeza.gif",
         },
         ejercicio_2 : {
           nombre : "Zancada con barra posterior",
@@ -156,7 +156,7 @@ export let routines = {
           equipo : "Barra con discos",
           repeticiones : "15 cada pierna",
           descanso : "1 minuto",
-          gif : "../assets/pierna/zancada_barra.gif",
+          gif : "./assets/pierna/zancada_barra.gif",
         },
         ejercicio_3 : {
           nombre : "Sentadilla con barra posterior",
@@ -164,7 +164,7 @@ export let routines = {
           equipo : "Barra con discos",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/sentadilla_posterior_barra.gif",
+          gif : "./assets/pierna/sentadilla_posterior_barra.gif",
         },
         ejercicio_4 : {
           nombre : "Peso Muerto",
@@ -172,7 +172,7 @@ export let routines = {
           equipo : "Barra con discos",
           repeticiones : 15,
           descanso : "1 minuto",
-          gif : "../assets/pierna/peso_muerto_barra.gif",
+          gif : "./assets/pierna/peso_muerto_barra.gif",
         },
       },
     },
@@ -185,28 +185,28 @@ export let routines = {
           series : 4,
           repeticiones : "15 cada pierna",
           descanso : "1 minuto",
-          gif : "../assets/pierna/salto.gif",
+          gif : "./assets/pierna/salto.gif",
         },
         ejercicio_2 : {
           nombre : "Zancada",
           series : 4,
           repeticiones : "15 cada pierna",
           descanso : "1 minuto",
-          gif : "../assets/pierna/zancadas-simple.gif",
+          gif : "./assets/pierna/zancadas-simple.gif",
         },
         ejercicio_3 : {
           nombre : "Cajón",
           series : 4,
           repeticiones : "15 cada pierna",
           descanso : "1 minuto",
-          gif : "../assets/pierna/cajon.gif",
+          gif : "./assets/pierna/cajon.gif",
         },
         ejercicio_4 : {
           nombre : "sentadilla simple",
           series : 4,
           repeticiones : "15 cada pierna",
           descanso : "1 minuto",
-          gif : "../assets/pierna/sentadillas-simple.gif",
+          gif : "./assets/pierna/sentadillas-simple.gif",
         },
       }
     },
