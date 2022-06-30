@@ -1,46 +1,39 @@
 @use '../utilities/variables' as var
+@use '../utilities/mixin' as mixin
 
 *
   padding: 0
   margin: 0
   box-sizing: border-box
   font-family: monospace
+  list-style: none
 
 aside
   form
     text-align: center
     .container-selection
       .equipamiento
-        margin: 20px 0
+        margin: var.$mv_btn
       select
         margin-top: 20px
       .level
         display: flex
         flex-direction: column
-        margin: 20px 0
+        margin: var.$mv_btn
         label
           display: flex
           align-items: center
           justify-content: space-between
-          width: 106px
-          margin: 0 auto
+          width: 110px
+          margin: 5px auto
     button
-      background: var.$color-botones
-      border: var.$borde-botones
-      padding: var.$padding-botones
-      box-shadow: var.$sombra-botones
-      border-radius: var.$curva-bordes-botones
-      margin: var.$mv-btn 0
+      @include mixin.button_standard
+      
 main
   ul
     text-align: center
-    list-style: none
     li
-      margin: 0 auto 20px auto
-      box-shadow: 0px 5px 10px 4px #ddd
-      width: 80%
-      border-radius: 7px
-      padding: 20px
+      @include mixin.card_standard
       img
         max-width: 100%
         max-height: 180px

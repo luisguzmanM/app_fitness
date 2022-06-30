@@ -1,0 +1,19 @@
+@use './variables' as var
+
+@mixin button_standard
+  background: var.$color_botones
+  border: var.$borde_botones
+  padding: var.$padding_botones
+  box-shadow: var.$sombra_botones
+  border-radius: var.$curva_bordes_botones
+  margin: var.$mv_btn 0
+
+@mixin card_standard
+  margin: var.$margin_card
+  box-shadow: var.$sombra_cards
+  width: 90%
+  max-width: var.$ancho_cards
+  min-height: var.$alto_cards
+  max-height: var.$alto_cards
+  border-radius: var.$curva_borde_cards
+  padding: var.$padding_cards
