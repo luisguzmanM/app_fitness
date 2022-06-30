@@ -7,6 +7,7 @@
   box-shadow: var.$sombra_botones
   border-radius: var.$curva_bordes_botones
   margin: var.$mv_btn 0
+  cursor: var.$cursor
 
 @mixin card_standard
   margin: var.$margin_card
@@ -17,3 +18,12 @@
   max-height: var.$alto_cards
   border-radius: var.$curva_borde_cards
   padding: var.$padding_cards
+
+@mixin select_standard
+  margin: var.$mv_selectos
+  border: var.$borde_selectors
+  box-shadow: var.$sombra_selectors
+  border-radius: var.$curva_selectos
+  padding: var.$padding_selectors
+  outline: none
+  cursor: var.$cursor

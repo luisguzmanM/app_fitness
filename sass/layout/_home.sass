@@ -14,8 +14,10 @@ aside
     .container-selection
       .equipamiento
         margin: var.$mv_btn
+        label 
+          cursor: var.$cursor
       select
-        margin-top: 20px
+        @include mixin.select_standard
       .level
         display: flex
         flex-direction: column
@@ -26,6 +28,7 @@ aside
           justify-content: space-between
           width: 110px
           margin: 5px auto
+          cursor: var.$cursor
     button
       @include mixin.button_standard
       

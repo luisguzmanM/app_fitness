@@ -12,8 +12,17 @@ aside form {
 aside form .container-selection .equipamiento {
   margin: 20px 0;
 }
+aside form .container-selection .equipamiento label {
+  cursor: pointer;
+}
 aside form .container-selection select {
-  margin-top: 20px;
+  margin: 20px 0;
+  border: none;
+  box-shadow: 0px 2px 2px 2px #DDD;
+  border-radius: 20px;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
 }
 aside form .container-selection .level {
   display: flex;
@@ -26,6 +35,7 @@ aside form .container-selection .level label {
   justify-content: space-between;
   width: 110px;
   margin: 5px auto;
+  cursor: pointer;
 }
 aside form button {
   background: none;
@@ -34,6 +44,7 @@ aside form button {
   box-shadow: 0px 2px 2px 2px #DDD;
   border-radius: 20px;
   margin: 20px 0 0;
+  cursor: pointer;
 }
 
 main ul {
