@@ -17,7 +17,7 @@ function validateForm(event){
     showMessage('Please, complete the form');
     return;
   } else {
-    prepareData(level, muscle);
+    createHTML(level, muscle);
   }
 }
 
@@ -56,6 +56,10 @@ function findSelectedMuscle(){
       break;
   }
   return muscle;
+}
+
+function createHTML(level, muscle){
+  console.log(level, muscle);
 }
 
 function showMessage(txtMessage){
