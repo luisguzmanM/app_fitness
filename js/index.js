@@ -4,6 +4,7 @@ const radioLevel = document.querySelectorAll("input[name='level']");
 const muscleSelected = document.querySelector("#muscle-group");
 const containerRoutine = document.querySelector("#container-routine");
 const container = document.querySelector(".container");
+const URL = './js/data.json';
 
 // eventos
 form.addEventListener("submit", validateForm);
@@ -11,12 +12,13 @@ form.addEventListener("submit", validateForm);
 function validateForm(event){
   event.preventDefault();
   const level = findSelectedLevel();
-  if (level === '' || level == undefined || muscleSelected.value === '' || muscleSelected.value == undefined) {
-    console.log('Please, complete the form');
+  const muscle = findSelectedMuscle();
+  if (level === '' || level == undefined || muscle === '' || muscle == undefined) {
     showMessage('Please, complete the form');
     return;
-  } 
-  findMucleSelected();
+  } else {
+    prepareData(level, muscle);
+  }
 }
 
 function findSelectedLevel(){
@@ -27,6 +29,33 @@ function findSelectedLevel(){
     }
   })
   return levelUser;
+}
+
+function findSelectedMuscle(){
+  let muscle;
+  switch (muscleSelected.value) {
+    case 'legs':
+      muscle = 'legs';
+      break;
+    case 'arms':
+      muscle = 'arms';
+      break;
+    case 'chest':
+      muscle = 'chest';
+      break;
+    case 'back':
+      muscle = 'back';
+      break;
+    case 'shoulders':
+      muscle = 'shoulders';
+      break;
+    case 'abs':
+      muscle = 'abs';
+      break;
+    default:
+      break;
+  }
+  return muscle;
 }
 
 function showMessage(txtMessage){
@@ -41,42 +70,4 @@ function showMessage(txtMessage){
   setTimeout(() => {
     divMsg.remove();
   }, 3000);
-}
-
-function findMucleSelected(){
-  let muscle;
-  switch (muscleSelected.value) {
-    case 'legs':
-      console.log('legs');
-      muscle = 'legs';
-      break;
-    case 'arms':
-      console.log('arms');
-      muscle = 'arms';
-      break;
-    case 'chest':
-      console.log('chest');
-      muscle = 'chest';
-      break;
-    case 'back':
-      console.log('back');
-      muscle = 'back';
-      break;
-    case 'shoulders':
-      console.log('shoulders');
-      muscle = 'shoulders';
-      break;
-    case 'abs':
-      console.log('abs');
-      muscle = 'abs';
-      break;
-    default:
-      break;
-  }
-  return muscle;
-}
-
-function showRoutine(){
-  const level = findSelectedLevel();
-  const muscle = findMucleSelected();
 }

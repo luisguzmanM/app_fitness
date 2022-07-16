@@ -9,6 +9,8 @@
   list-style: none
 
 .container
+  height: 100vh
+  padding: 20px
   aside
     form
       text-align: center
@@ -34,7 +36,6 @@
         @include mixin.button_standard
 
   main
-    position: relative
     ul
       li
         @include mixin.card_standard
@@ -42,11 +43,12 @@
           max-width: 100%
           max-height: 180px
   .message
+    width: 90%
+    text-align: center
     background-color: red
     color: white
     padding: 5px
-    border-radius: 20px
     position: absolute
-    bottom: 10px
+    bottom: 20px
     left: 50%
     transform: translateX(-50%)
