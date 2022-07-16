@@ -1,94 +1,82 @@
-import {routines} from  './db.js';
-
 // variables
 const form = document.querySelector("#form");
-const conEquipo = document.querySelector("#con-equipo");
-const sinEquipo = document.querySelector("#sin-equipo");
-const levelOne = document.querySelector("#principiante");
-const levelTwo = document.querySelector("#intermedio");
-const levelThree = document.querySelector("#avanzado");
+const radioLevel = document.querySelectorAll("input[name='level']");
+const muscleSelected = document.querySelector("#muscle-group");
+const containerRoutine = document.querySelector("#container-routine");
+const container = document.querySelector(".container");
 
 // eventos
-form.addEventListener('submit', selectTrainingType);
+form.addEventListener("submit", validateForm);
 
-// funciones
-function selectTrainingType(e) {
-  e.preventDefault();
-  let availableRoutine;
+function validateForm(event){
+  event.preventDefault();
+  const level = findSelectedLevel();
+  if (level === '' || level == undefined || muscleSelected.value === '' || muscleSelected.value == undefined) {
+    console.log('Please, complete the form');
+    showMessage('Please, complete the form');
+    return;
+  } 
+  findMucleSelected();
+}
 
-  if(conEquipo.checked === true){
-    availableRoutine = routines.conEquipos;
-  } else {
-    availableRoutine = routines.sinEquipos;
+function findSelectedLevel(){
+  let levelUser;
+  radioLevel.forEach(element => {
+    if(element.checked){
+      levelUser = element.value;
+    }
+  })
+  return levelUser;
+}
+
+function showMessage(txtMessage){
+  const divMsg = document.createElement('div');
+  divMsg.className = 'message';
+  let txtMsg = document.createTextNode(txtMessage);
+  divMsg.appendChild(txtMsg);
+  const messageInScreen = document.querySelector(".message");
+  if(!messageInScreen){
+    container.appendChild(divMsg);
   }
-  selectYourLevel(availableRoutine);
+  setTimeout(() => {
+    divMsg.remove();
+  }, 3000);
 }
 
-function selectYourLevel(availableRoutine) {
-  let routineLevel;
-  if(levelOne.checked === true){
-    routineLevel = availableRoutine.principiante;    
-  } else if(levelTwo.checked === true) {
-    routineLevel = availableRoutine.intermedio;
-  } else {
-    routineLevel = availableRoutine.avanzado;
-  }
-  selectMuscle(routineLevel);
-}
-
-function selectMuscle(routineLevel){
-  const muscleSelected = document.querySelector("#muscle-group").value;
-  selectRoutine(muscleSelected, routineLevel);  
-}
-
-function selectRoutine(muscleSelected, routineLevel){
-  let routine;
-  switch (muscleSelected) {
-    case "legs":
-      routine = routineLevel.pierna;
+function findMucleSelected(){
+  let muscle;
+  switch (muscleSelected.value) {
+    case 'legs':
+      console.log('legs');
+      muscle = 'legs';
       break;
-    case "arms": 
-      routine = routineLevel.brazos;
+    case 'arms':
+      console.log('arms');
+      muscle = 'arms';
       break;
-    case "chest":
-      routine = routineLevel.pectorales;
+    case 'chest':
+      console.log('chest');
+      muscle = 'chest';
       break;
-    case "back":
-      routine = routineLevel.espalda;
+    case 'back':
+      console.log('back');
+      muscle = 'back';
       break;
-    case "shoulders":
-      routine = routineLevel.hombros;
+    case 'shoulders':
+      console.log('shoulders');
+      muscle = 'shoulders';
+      break;
+    case 'abs':
+      console.log('abs');
+      muscle = 'abs';
       break;
     default:
       break;
   }
-  showRoutine(routine);
+  return muscle;
 }
 
-function showRoutine(param){
-
-  limpiarHTML();
-
-  const list = document.querySelector("#container-routine");
-  let arrayRoutine = [];
-  for(let item in param){
-    const { nombre, series, equipo, repeticiones, descanso, gif } = param[item];
-    const routineHTML = `
-      <li>
-        <h3>${nombre}</h3>
-        <p>Series: ${series}</p>
-        <p>Repeticiones: ${repeticiones}</p>
-        <p>Descanso: ${descanso}</p>
-        <img src="${gif}" alt="gif-exercise">
-      </li>
-    `;
-    arrayRoutine.push(routineHTML);
-  }
-  arrayRoutine.forEach( e => {
-    list.innerHTML += e;
-  })
-}
-
-function limpiarHTML(){
-  document.querySelector("#container-routine").innerHTML = '';
+function showRoutine(){
+  const level = findSelectedLevel();
+  const muscle = findMucleSelected();
 }

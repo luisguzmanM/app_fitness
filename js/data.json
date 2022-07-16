@@ -1,0 +1,33 @@
+[
+  {
+    "level" : {
+      "beginner" : {
+        "legs" : {
+          "id" : 1,
+          "exercise" : "Squat",
+          "sets" : 4,
+          "reps" : "20, 15, 12, 10",
+          "break" : "30 seconds"
+        }
+      },
+      "intermediate" : {
+        "legs" : {
+          "id" : 2,
+          "exercise" : "Squat",
+          "sets" : 6,
+          "reps" : "2x30, 2x25, 2x20",
+          "break" : "45 seconds"
+        }
+      },
+      "advanced" : {
+        "legs" : {
+          "id" : 3,
+          "exercise" : "Squat",
+          "sets" : 8,
+          "reps" : "2x50, 2x40, 2x30, 2x20",
+          "break" : "60 seconds"
+        }
+      }
+    }
+  }
+]

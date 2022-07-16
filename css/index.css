@@ -6,16 +6,16 @@
   list-style: none;
 }
 
-aside form {
+.container aside form {
   text-align: center;
 }
-aside form .container-selection .equipamiento {
+.container aside form .container-selection .equipamiento {
   margin: 20px 0;
 }
-aside form .container-selection .equipamiento label {
+.container aside form .container-selection .equipamiento label {
   cursor: pointer;
 }
-aside form .container-selection select {
+.container aside form .container-selection select {
   margin: 20px 0;
   border: none;
   box-shadow: 0px 2px 2px 2px #DDD;
@@ -24,12 +24,12 @@ aside form .container-selection select {
   outline: none;
   cursor: pointer;
 }
-aside form .container-selection .level {
+.container aside form .container-selection .level {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
 }
-aside form .container-selection .level label {
+.container aside form .container-selection .level label {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,7 +37,7 @@ aside form .container-selection .level label {
   margin: 5px auto;
   cursor: pointer;
 }
-aside form button {
+.container aside form button {
   background: none;
   border: none;
   padding: 5px 10px;
@@ -46,11 +46,10 @@ aside form button {
   margin: 20px 0 0;
   cursor: pointer;
 }
-
-main ul {
-  text-align: center;
+.container main {
+  position: relative;
 }
-main ul li {
+.container main ul li {
   margin: 20px auto 20px auto;
   box-shadow: 0px 5px 10px 4px #DDD;
   width: 90%;
@@ -60,9 +59,19 @@ main ul li {
   border-radius: 7px;
   padding: 20px;
 }
-main ul li img {
+.container main ul li img {
   max-width: 100%;
   max-height: 180px;
+}
+.container .message {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=index.css.map */
